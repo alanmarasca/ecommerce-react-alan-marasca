@@ -1,0 +1,35 @@
+.nav {
+    list-style-type: none;
+    margin: 0 ;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #ffd9b9;
+    
+}
+.TitulosSecundarios{
+   
+    margin-left: 300px ;
+    font-size: 20px ;
+}
+
+.TituloPrincipal{
+    text-decoration: none;
+    color: black;
+    
+    font-size: 30px ;
+    
+}
+
+
+.ListaDerecha {
+    padding: 10px;
+    text-decoration: none;
+    color:black;
+   
+}
+
+.nav a:hover{
+    color:cadetblue;
+    background-color: antiquewhite;
+}
