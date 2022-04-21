@@ -5,7 +5,7 @@ import CartWidget from '../CartWidget';
 
 
 
-function NavBar(props) {
+function NavBar() {
     return (
        <header>
         <div>
@@ -18,11 +18,11 @@ function NavBar(props) {
 
                 <a href="#" className='TituloPrincipal'>TALLER DE RECUERDOS</a>
                <ul className='TitulosSecundarios'>
-               <a href="#" className='ListaDerecha'> Productos</a>
-               <a href="#" className='ListaDerecha'> Contacto </a>
-               <a href='#'className='ListaDerecha'> Quienes Somos</a>
-               <a href="#" className='ListaDerecha'> Iniciar Sesion</a>
-               <a href="#" className='ListaDerecha'> Registrate</a>
+               <a href="#" className='ListaDerecha'> Cuadros</a>
+               <a href="#" className='ListaDerecha'> Fotos </a>
+               <a href='#'className='ListaDerecha'> Imanes</a>
+               <a href="#" className='ListaDerecha'> Calendarios</a>
+               <a href="#" className='ListaDerecha'> Fechas especiales</a>
               </ul>
               <div className='Carrito'>
                <CartWidget/>
