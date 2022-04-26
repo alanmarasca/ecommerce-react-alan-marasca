@@ -1,0 +1,8 @@
+.BoxCount{
+    display: flex;
+    justify-content: center;
+    }
+
+.Cantidad{
+    margin: 0 15px;
+}
