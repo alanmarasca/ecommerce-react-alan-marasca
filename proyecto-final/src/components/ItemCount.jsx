@@ -15,6 +15,12 @@ function ItemCount(props) {
   }
 
 
+ // const handleOnAdd = () => {
+
+   // alert(`Productos agregados al carrito`)
+
+ // }
+
   
     return (
     <div> 
@@ -23,12 +29,13 @@ function ItemCount(props) {
             <div className='Cantidad'>  {count}  </div>
             <button onClick={handleAdd}> +</button>
         </div>
-        <div>
-            <button>Agragar al carrito</button>
-        </div>
+       
 
     </div>
   )
 }
 
-export default ItemCount
+export default ItemCount 
+//<div>
+           //<button onClick={handleOnAdd}>Agragar al carrito</button>
+        //</div>

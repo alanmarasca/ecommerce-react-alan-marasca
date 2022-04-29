@@ -1,0 +1,7 @@
+.ItemLista{
+   
+    display: flex;  
+    flex-wrap: wrap;
+    margin: 200px 400px 200px;
+    justify-content: space-around;
+}
