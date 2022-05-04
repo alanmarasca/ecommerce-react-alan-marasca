@@ -3,7 +3,13 @@ import React, {useEffect, useState} from "react";
 import productos from "./data/productos";
 import ItemList from "./ItemList";
 
-function getProduct() {
+
+
+
+function ItemListContainer({greeting}) {
+  const [listaProductos, setProductos] = useState([]);
+
+  function getProduct() {
   return new Promise( (resolve, reject) => {
     setTimeout( () => {
       resolve(productos);
@@ -11,12 +17,6 @@ function getProduct() {
   });
 
 }
-
-
-function ItemListContainer({greeting}) {
-  const [listaProductos, setProductos] = useState([]);
-
-  
   useEffect( () => {
     getProduct().then(respuestaPromise => {
       setProductos(respuestaPromise);

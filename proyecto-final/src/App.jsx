@@ -1,6 +1,6 @@
-import ItemCount from "./components/ItemCount";
+//import ItemCount from "./components/ItemCount";
 import './App.css';
-import ItemListContainer from './components/ItemListContainer';
+import ItemDetailContainer from './components/ItemDetailContainer';
 import NavBar from './components/NavBar/NavBar';
 
 //const handleOnAdd = (cantidad) => {
@@ -16,8 +16,8 @@ function App() {
     <div className="App">
       
       <NavBar />
-     <ItemListContainer greeting="Bienvenidos"/>     
-     <ItemCount stock={5} initial={1} />     
+       <ItemDetailContainer/>  
+         
         
       
     </div>
@@ -26,3 +26,5 @@ function App() {
 
 export default App;
 //onAdd={handleOnAdd}
+//<ItemCount stock={5} initial={1} /> 
+//<ItemListContainer greeting="Bienvenidos"/> 

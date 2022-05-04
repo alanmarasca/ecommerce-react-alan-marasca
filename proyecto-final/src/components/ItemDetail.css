@@ -1,0 +1,23 @@
+.box-left{
+   
+    margin-top: 180px;
+    display: flex;
+}
+
+
+
+.titulo  { 
+    max-width: 50%;
+    margin: 5em auto;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(180, 105, 20, 0.774);
+    background: white;
+    width: 35%;
+    margin-left: 80px ;
+    
+
+    
+}
+.izquierda-imagen {
+    width: 40%;
+}
