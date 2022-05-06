@@ -19,11 +19,11 @@ function NavBar() {
 
                 <a href="#" className='TituloPrincipal'>TALLER DE RECUERDOS</a>
                <ul className='TitulosSecundarios'>
-               <a href="#" className='ListaDerecha'> <NavLink to='/category/Madera'> Madera</NavLink></a>
-               <a href="#" className='ListaDerecha'> <NavLink to='/category/fotos'> Fotos</NavLink>  </a>
-               <a href='#'className='ListaDerecha'>  <NavLink to='/category/imanes'> Imanes</NavLink></a>
-               <a href="#" className='ListaDerecha'> <NavLink to='/category/calendarios'>Calendarios </NavLink> </a>
-               <a href="#" className='ListaDerecha'> <NavLink to='/category/fechas'> Fechas especiales</NavLink></a>
+               <a href="#" className='ListaDerecha'> <NavLink to='/category/Cuadros'> Cuadros</NavLink></a>
+               <a href="#" className='ListaDerecha'> <NavLink to='/category/Fotos'> Fotos</NavLink>  </a>
+               <a href='#'className='ListaDerecha'>  <NavLink to='/category/Imanes'> Imanes</NavLink></a>
+               <a href="#" className='ListaDerecha'> <NavLink to='/category/Calendarios'>Calendarios </NavLink> </a>
+               <a href="#" className='ListaDerecha'> <NavLink to='/category/Especiales'>  Especiales</NavLink></a>
               </ul>
               <div className='Carrito'>
                <CartWidget/>
