@@ -2,6 +2,7 @@ import React from 'react';
 import './NavBar.css';
 import imgLogo from '../NavBar/Imagenes/logo.png'
 import CartWidget from '../CartWidget';
+import { NavLink } from 'react-router-dom';
 
 
 
@@ -18,11 +19,11 @@ function NavBar() {
 
                 <a href="#" className='TituloPrincipal'>TALLER DE RECUERDOS</a>
                <ul className='TitulosSecundarios'>
-               <a href="#" className='ListaDerecha'> Cuadros</a>
-               <a href="#" className='ListaDerecha'> Fotos </a>
-               <a href='#'className='ListaDerecha'> Imanes</a>
-               <a href="#" className='ListaDerecha'> Calendarios</a>
-               <a href="#" className='ListaDerecha'> Fechas especiales</a>
+               <a href="#" className='ListaDerecha'> <NavLink to='/category/Madera'> Madera</NavLink></a>
+               <a href="#" className='ListaDerecha'> <NavLink to='/category/fotos'> Fotos</NavLink>  </a>
+               <a href='#'className='ListaDerecha'>  <NavLink to='/category/imanes'> Imanes</NavLink></a>
+               <a href="#" className='ListaDerecha'> <NavLink to='/category/calendarios'>Calendarios </NavLink> </a>
+               <a href="#" className='ListaDerecha'> <NavLink to='/category/fechas'> Fechas especiales</NavLink></a>
               </ul>
               <div className='Carrito'>
                <CartWidget/>

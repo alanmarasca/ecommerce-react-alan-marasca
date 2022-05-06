@@ -1,5 +1,6 @@
 import React from 'react'
-import productos from './data/productos';
+import { Link } from 'react-router-dom';
+
 import './Item.css';
 
 function Item( {productos} ) {
@@ -10,6 +11,8 @@ function Item( {productos} ) {
         <h3>Categoria: {productos.categoria}</h3>
         <p className='price'>$ {productos.price}</p>
         <p> Material {productos.categoria}</p>
+
+        <Link to={'/item/' + productos?.id}> Descripcion </Link>
         <p><button>Add to Cart</button></p>
     </div>
   )

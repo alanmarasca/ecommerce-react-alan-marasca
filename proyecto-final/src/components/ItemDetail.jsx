@@ -19,7 +19,7 @@ function ItemDetail({ item }) {
                     <p>  {item?.description} </p>
                     <div >
                         
-                        <ItemCount initial={0} stock={5} onAdd={() => {}} />
+                        <ItemCount initial={0} stock={item.stock} onAdd={() => {}} />
                     <p><button>Comprar</button></p>
                     </div>
                 </div>

@@ -1,6 +1,8 @@
 //import ItemCount from "./components/ItemCount";
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import ItemDetailContainer from './components/ItemDetailContainer';
+import ItemListContainer from './components/ItemListContainer'
 import NavBar from './components/NavBar/NavBar';
 
 //const handleOnAdd = (cantidad) => {
@@ -16,7 +18,13 @@ function App() {
     <div className="App">
       
       <NavBar />
-       <ItemDetailContainer/>  
+      <Routes>
+        <Route path='/' element={<ItemListContainer />} />
+        <Route path='/category/:categoryId' element={<ItemListContainer />} />
+        <Route path='/item/:id' element={<ItemDetailContainer/> } />
+      </Routes>
+      
+       
          
         
       
@@ -27,4 +35,4 @@ function App() {
 export default App;
 //onAdd={handleOnAdd}
 //<ItemCount stock={5} initial={1} /> 
-//<ItemListContainer greeting="Bienvenidos"/> 
+ 
