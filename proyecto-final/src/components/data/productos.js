@@ -44,7 +44,7 @@ const productos = [ {id: 0,
     img: "https://fotosprint.s3.us-west-2.amazonaws.com/prod/img/p/4/2/5/3/4253.jpg?v=1651087653",
     price:  850,
     category: "Fotos",
-    stock: 5400
+    stock: 6
     }
     ];
     

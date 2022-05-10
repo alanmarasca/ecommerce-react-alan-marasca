@@ -1,14 +1,19 @@
-import React from "react";
+import React, {useState} from 'react';
 import ItemCount from '../components/ItemCount';
 import './ItemDetail.css';
+import { Link } from 'react-router-dom';
 
 
 function ItemDetail({ item }) {
+const [CantidadDeProductos, setCantidadDeProductos] = useState(null);
+    function addHandler(quantityToAdd) {
+        setCantidadDeProductos(quantityToAdd);
+    }
     return (
         <div  className="box-left">
             <div >
                 <div className="izquierda-imagen" >
-                    <img src={ item?.imageUrl } alt="Imagen del producto" />
+                    <img src={ item?.img } alt="Imagen del producto" />
                 </div>
             </div>
             <div className="titulo" >
@@ -18,9 +23,10 @@ function ItemDetail({ item }) {
                     <br />
                     <p>  {item?.description} </p>
                     <div >
-                        
-                        <ItemCount initial={0} stock={item.stock} onAdd={() => {}} />
-                    <p><button>Comprar</button></p>
+                        {CantidadDeProductos ?
+                        <button> <Link to='/cart'>Terminar Compra ({CantidadDeProductos} items)</Link></button>:
+                        <ItemCount initial={0} stock={item.stock} onAdd={addHandler} />
+                        }
                     </div>
                 </div>
             </div>
