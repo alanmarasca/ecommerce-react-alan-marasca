@@ -6,6 +6,8 @@ import ItemListContainer from './components/ItemListContainer'
 import NavBar from './components/NavBar/NavBar';
 import Cart from './components/Cart';
 
+
+
 //const handleOnAdd = (cantidad) => {
 
     //alert(`Agregaste ${cantidad} productos`)

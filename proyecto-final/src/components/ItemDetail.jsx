@@ -2,12 +2,17 @@ import React, {useState} from 'react';
 import ItemCount from '../components/ItemCount';
 import './ItemDetail.css';
 import { Link } from 'react-router-dom';
+import { useCartContext } from './CartContextProvider';
 
 
 function ItemDetail({ item }) {
 const [CantidadDeProductos, setCantidadDeProductos] = useState(null);
+const {addToCard} = useCartContext ();
+
     function addHandler(quantityToAdd) {
         setCantidadDeProductos(quantityToAdd);
+        addToCard(item,quantityToAdd)
+       
     }
     return (
         <div  className="box-left">
