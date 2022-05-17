@@ -20,21 +20,21 @@ function ItemListContainer({greeting}) {
   
   
   const [listaProductos, setProductos] = useState([]);
+  const [loading, setLoading] = useState(true)
   const { categoryId} = useParams();
 
 useEffect( () => {
- 
-    getProduct(categoryId).then(respuestaPromise => {
-      setProductos(respuestaPromise);
-    });
+ setLoading(true)
+    getProduct(categoryId)
+    .then((respuestaPromise) =>  setProductos(respuestaPromise))
+    .finally(() => setLoading(false));
   }, [categoryId]  );
 
 
 
   
   return (
-    <h1>{greeting} </h1>,
-    <ItemList productos={listaProductos} />
+    <>{loading ? <h1>Cargando... </h1> : <ItemList productos={listaProductos} />}</>
   )
 }
 

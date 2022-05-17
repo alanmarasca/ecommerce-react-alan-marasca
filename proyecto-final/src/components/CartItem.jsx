@@ -2,14 +2,18 @@ import React from 'react'
 import { useCartContext } from './CartContextProvider'
 
 const CartItem = ({item}) => {
-    const {deleteById} = useCartContext()
+    const {deleteById, removeOneUnit} = useCartContext();
+const {title, quantity, price, id } = item
+
+
   return (
     <div>
-        <h1>{item.title}</h1>
-        <h4> Unidades: {item.quantity}</h4>
-        <h4>Precio Unitario: $ {item.price}</h4>
+        <h1>{title}</h1>
+        <h4> Unidades: {quantity}</h4>
+        <h4>Precio Unitario: $ {price}</h4>
         <img src={ item?.img } alt="Imagen del producto" />
-        <button onClick={() => deleteById(item.id)}> Eliminar</button>
+        <button onClick={() => removeOneUnit(id)}> Eliminar 1 </button>
+        <button onClick={() => deleteById(id)}> Eliminar todo</button>
     </div>
   )
 }
