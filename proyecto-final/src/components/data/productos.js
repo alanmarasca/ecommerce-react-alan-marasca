@@ -3,7 +3,8 @@ const productos = [ {id: 0,
     img: "https://www.correomagico.com/otros/premium/imprentamagica/prev_jpg/fotocal2022_multiple.jpg" ,
     price:  590,
     category: "Calendarios",
-    stock: 20
+    stock: 20,
+    description:"Calendario personalizado con 13 fotos (una portada y 12 meses).Anillado wire (blanco, plateado o negro según disponibilidad) y con carpeta contenedora para colgarlo en la pared. Tamaño cerrado: 21×29,7 cm Tamaño abierto: 42×29.7cm por calendario"
     } , 
     
     {id: 1,
@@ -11,7 +12,8 @@ const productos = [ {id: 0,
     img: "https://fotosprint.s3.us-west-2.amazonaws.com/prod/img/p/3/8/3/1/3831.jpg?v=1651087653",
     price:  1190,
     category: "Especiales",
-    stock: 350
+    stock: 35,
+    description: "Fotolibro de tapa dura con 40 fotos en papel ilustración 170 gs.Tamaño del fotolibro: 21x21 cm por fotolibro."
     },
     
     {id: 2,
@@ -19,7 +21,8 @@ const productos = [ {id: 0,
     img: "https://fotosprint.s3.us-west-2.amazonaws.com/prod/img/p/5/0/8/8/5088.jpg?v=1651087653",
     price:  240,
     category: "Imanes",
-    stock: 1500
+    stock: 15,
+    description: "Imanes de formato cuadrado. Tamaño del imán: 6x6"
     }
     ,
     
@@ -37,14 +40,16 @@ const productos = [ {id: 0,
     img: "https://fotosprint.s3.us-west-2.amazonaws.com/prod/img/p/2/2/5/7/2257.jpg?v=1651087653",
     price:  500,
     category: "Fotos",
-    stock: 950
+    stock: 10,
+    description:"Reel de tiras polaroid de 4 fotos (papel brillante). Tamaño: 10x6 cm"
     } ,
     {id: 5,
     title: "Fotos",
     img: "https://fotosprint.s3.us-west-2.amazonaws.com/prod/img/p/4/2/5/3/4253.jpg?v=1651087653",
     price:  850,
     category: "Fotos",
-    stock: 6
+    stock: 6,
+    description:"Imprimilas en estilo Polaroid® (papel brillante). Tamaño de la foto: 8,2x10 cm"
     }
     ];
     
