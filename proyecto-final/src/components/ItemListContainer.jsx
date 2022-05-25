@@ -1,40 +1,49 @@
+
 import React, {useEffect, useState} from "react";
 import { useParams } from "react-router-dom";
 
-import productos from "./data/productos";
+
+
 import ItemList from "./ItemList";
-
-  function getProduct(category) {
-  return new Promise( (resolve, reject) => {
-    const productosFiltro =  category ? productos.filter(p => p.category === category) : productos
-    setTimeout( () => {
-      resolve(productosFiltro);
-    }, 2000);
-  });
-
-}
+import db from "../services/firebase";
+import { collection, getDocs, query, where } from "firebase/firestore";
+  
 
 
-function ItemListContainer({greeting}) {
+function ItemListContainer() {
   
   
   
-  const [listaProductos, setProductos] = useState([]);
+  const [Items, setProductos] = useState([]);
   const [loading, setLoading] = useState(true)
   const { categoryId} = useParams();
 
+  const getData = async (category) =>{
+    try{
+      setLoading(true)
+ 
+      const document = category ? query(collection(db, "items"), where('category', '==', category))
+                                : collection(db, "items")
+const col = await getDocs(document)
+const result = col.docs.map((doc) => doc = {id:doc.id, ...doc.data()})
+
+setProductos(result)
+setLoading(false)
+
+    } catch (error) {
+      console.log(error)
+    }
+  }
+
 useEffect( () => {
- setLoading(true)
-    getProduct(categoryId)
-    .then((respuestaPromise) =>  setProductos(respuestaPromise))
-    .finally(() => setLoading(false));
+ getData(categoryId)
   }, [categoryId]  );
 
 
 
   
   return (
-    <>{loading ? <h1>Cargando... </h1> : <ItemList productos={listaProductos} />}</>
+    <>{loading ? <h1>Cargando... </h1> : <ItemList productos={Items} />}</>
   )
 }
 
