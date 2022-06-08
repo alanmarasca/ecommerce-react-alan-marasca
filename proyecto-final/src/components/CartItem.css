@@ -1,0 +1,22 @@
+.BigContainer{
+    background: rgb(212, 205, 205);
+    
+
+}
+.SecondContainer{
+    background: rgba(255, 255, 253, 0.979);
+    max-width: 25%;
+    padding-top: 50px;
+    border-radius: 15%;
+}
+.imagen-t{
+    max-width: 50%;
+}
+.datos{
+    background: rgb(240, 209, 152);
+}
+
+.BigContain{
+    background: rgba(223, 116, 46, 0.74);
+    border-radius: 30px;
+    border-color: antiquewhite;}

@@ -11,7 +11,7 @@ function NavBar() {
   const {totalCount} = useCartContext(); 
     return (
        <header>
-        <div>
+        <div className='nav'>
             
 
 

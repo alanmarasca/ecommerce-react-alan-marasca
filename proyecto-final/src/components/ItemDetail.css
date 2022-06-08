@@ -11,13 +11,20 @@
     margin: 5em auto;
     text-align: center;
     box-shadow: 0 4px 8px 0 rgba(180, 105, 20, 0.774);
-    background: white;
+    background: rgba(236, 227, 227, 0.486);
     width: 35%;
-    margin-left: 80px ;
+    margin-left: 50px ;
     
 
     
 }
-.izquierda-imagen {
-    width: 40%;
-}
+.img_med{
+    height: 90%;
+    width: auto;
+  }
+
+  .botonTerminarCompra{
+    background: rgb(240, 209, 152);
+    border-radius: 30px;
+    border-color: antiquewhite;
+  }

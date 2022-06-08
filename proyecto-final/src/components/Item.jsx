@@ -8,12 +8,12 @@ function Item( {productos} ) {
     <div className='card'>
         <h1>{productos.title}</h1>
          <img src= {productos.img} />
-        <h3>Categoria: {productos.categoria}</h3>
+         {productos.categoria}
         <p className='price'>$ {productos.price}</p>
-        <p> Material {productos.categoria}</p>
+        {productos.categoria}
 
-        <Link to={'/item/' + productos?.id}> Descripcion </Link>
-        <p><button>Add to Cart</button></p>
+        <Link to={'/item/' + productos?.id}> <button>Descripcion</button> </Link>
+        
     </div>
   )
 }

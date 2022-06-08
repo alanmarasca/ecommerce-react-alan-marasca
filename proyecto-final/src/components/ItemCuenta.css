@@ -1,6 +1,17 @@
+.BigContain{
+    background: rgb(240, 209, 152);
+    border-radius: 30px;
+    border-color: antiquewhite;
+}
+.izquierda-imagen{
+    height: 90%;
+    width: auto;
+}
+
 .BoxCount{
     display: flex;
     justify-content: center;
+    
     }
 
 .Cantidad{
